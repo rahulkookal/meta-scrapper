@@ -14,3 +14,6 @@ curl --location --request POST 'http://localhost:3000/meta' \
 npm packages used
 1. got - get web content
 2. node-html-parser - html parser for node
+
+Test case Run
+1. npm test

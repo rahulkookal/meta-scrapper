@@ -45,9 +45,16 @@ const generate_meta_scrap_data = async (body) => {
 }
 
 const meta = async(req, res, next) => {
+  try {
     let html_content = await load_html(req.body.url, res);
     let meta_scrap_data = await generate_meta_scrap_data(html_content);
-    res.json(meta_scrap_data);
+    res.json(meta_scrap_data);    
+  } catch (error) {
+    console.log(error)
+    res.status(500)
+    res.send({error: "URL is missing! Please try again with url"})
+  }
+    
 }
 /* POST meta method. */
 router.post('/', meta);
