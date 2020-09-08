@@ -17,3 +17,5 @@ npm packages used
 
 Test case Run
 1. npm test
+Test coverage( 100% coverage for meta route. General App coverage is ignored for now)
+1. npm run test-with-coverage
