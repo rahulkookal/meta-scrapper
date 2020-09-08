@@ -1,6 +1,6 @@
 Meta Scrapper
 
-Run on local machine
+Run on local machine. Make sure the node version is higher than 10.x.x
 
 1. npm install
 2. npm start
