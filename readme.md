@@ -6,9 +6,11 @@ Run on local machine. Make sure the node version is higher than 10.x.x
 2. npm start
 
 sample API Request
+
 curl --location --request POST 'http://localhost:3000/meta' --header 'Content-Type: application/json' --data-raw '{"url": "https://developer.mozilla.org"}'
 
 Hosted url
+
 curl --location --request POST 'http://18.216.32.29:80/meta' --header 'Content-Type: application/json' --data-raw '{"url": "https://developer.mozilla.org"}'
 
 npm packages used
